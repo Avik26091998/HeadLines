@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HeadLines</title>
+</head>
+<body>
+	<h4>Headlines</h4><br>
+	{%for article in articles%}
+	<h1>{{article.title}}</h1><br>
+	<h2>{{article.description}}</h2>
+	<i><a href="{{article.link}}" target = "_blank">{{article.link}}</a></i><br>
+	<hr>
+	{%endfor%}
+</body>
+</html>
